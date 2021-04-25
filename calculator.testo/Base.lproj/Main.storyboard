@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator_testo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ABD31CA3-636E-4AA5-870D-F28BC48A350E" translatesAutoresizingMaskIntoConstraints="NO" id="zyv-Ag-Ygz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CMi-Sd-QWg">
-                                <rect key="frame" x="53.5" y="260" width="213" height="48"/>
+                                <rect key="frame" x="50" y="309.5" width="275" height="48"/>
                                 <subviews>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4p-7C-oyp">
-                                        <rect key="frame" x="0.0" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="４">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -34,7 +34,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZ3-Bo-2KK">
-                                        <rect key="frame" x="61" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="76.5" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="５">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtV-eO-k6q">
-                                        <rect key="frame" x="122" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="152.5" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="６">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -53,8 +53,8 @@
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPr-wi-egz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDd-0N-kNx">
-                                        <rect key="frame" x="183" y="0.0" width="30" height="48"/>
+                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDd-0N-kNx">
+                                        <rect key="frame" x="229" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="×">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
@@ -64,12 +64,17 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="JZ3-Bo-2KK" firstAttribute="width" secondItem="m4p-7C-oyp" secondAttribute="width" id="CmD-bS-NCU"/>
+                                    <constraint firstItem="WDd-0N-kNx" firstAttribute="width" secondItem="m4p-7C-oyp" secondAttribute="width" id="WS4-Pc-CwD"/>
+                                    <constraint firstItem="DtV-eO-k6q" firstAttribute="width" secondItem="m4p-7C-oyp" secondAttribute="width" id="yev-T9-Tjd"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="59H-hc-SBC">
-                                <rect key="frame" x="53.5" y="192" width="213" height="48"/>
+                                <rect key="frame" x="50" y="241.5" width="275" height="48"/>
                                 <subviews>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-Ex-NOi">
-                                        <rect key="frame" x="0.0" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="７">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -79,7 +84,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXK-r0-1nB">
-                                        <rect key="frame" x="61" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="76.5" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="８">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -89,7 +94,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyM-X3-9yq">
-                                        <rect key="frame" x="122" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="152.5" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="９">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -98,8 +103,8 @@
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUA-gd-iaF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5US-93-qkf">
-                                        <rect key="frame" x="183" y="0.0" width="30" height="48"/>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5US-93-qkf">
+                                        <rect key="frame" x="229" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="+">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
@@ -109,12 +114,17 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="5US-93-qkf" firstAttribute="width" secondItem="Ud1-Ex-NOi" secondAttribute="width" id="KZO-Eg-DTg"/>
+                                    <constraint firstItem="pyM-X3-9yq" firstAttribute="width" secondItem="Ud1-Ex-NOi" secondAttribute="width" id="cTU-ZL-GLu"/>
+                                    <constraint firstItem="uXK-r0-1nB" firstAttribute="width" secondItem="Ud1-Ex-NOi" secondAttribute="width" id="rBS-3j-lEx"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QLI-2L-YBG">
-                                <rect key="frame" x="54" y="328" width="212" height="48"/>
+                                <rect key="frame" x="50" y="377.5" width="275" height="48"/>
                                 <subviews>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hle-uy-ywX">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="1">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -124,7 +134,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ge-Na-deb">
-                                        <rect key="frame" x="60" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="76.5" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="２">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -134,7 +144,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubL-hK-Qbx">
-                                        <rect key="frame" x="121" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="152.5" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="３">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -143,8 +153,8 @@
                                             <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9lf-at-bBI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exB-I0-DYN">
-                                        <rect key="frame" x="182" y="0.0" width="30" height="48"/>
+                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exB-I0-DYN">
+                                        <rect key="frame" x="229" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="−">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
@@ -154,12 +164,17 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="exB-I0-DYN" firstAttribute="width" secondItem="hle-uy-ywX" secondAttribute="width" id="131-hU-2eA"/>
+                                    <constraint firstItem="ubL-hK-Qbx" firstAttribute="width" secondItem="hle-uy-ywX" secondAttribute="width" id="CWM-0h-koS"/>
+                                    <constraint firstItem="3ge-Na-deb" firstAttribute="width" secondItem="hle-uy-ywX" secondAttribute="width" id="ZZ5-md-XPi"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="uwN-vH-fuf">
-                                <rect key="frame" x="55" y="124" width="210" height="48"/>
+                                <rect key="frame" x="50" y="173.5" width="275" height="48"/>
                                 <subviews>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87c-pW-mFb">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="C">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
@@ -169,15 +184,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1p-Eu-JAI">
-                                        <rect key="frame" x="60" y="0.0" width="30" height="48"/>
+                                        <rect key="frame" x="76.5" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bg2-1D-Oer">
-                                        <rect key="frame" x="120" y="0.0" width="30" height="48"/>
+                                        <rect key="frame" x="152.5" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                     </button>
                                     <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdd-Ji-LDJ">
-                                        <rect key="frame" x="180" y="0.0" width="30" height="48"/>
+                                        <rect key="frame" x="229" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="÷">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
@@ -187,12 +202,17 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="bg2-1D-Oer" firstAttribute="width" secondItem="87c-pW-mFb" secondAttribute="width" id="5p5-as-pRQ"/>
+                                    <constraint firstItem="m1p-Eu-JAI" firstAttribute="width" secondItem="87c-pW-mFb" secondAttribute="width" id="IkJ-lO-SyO"/>
+                                    <constraint firstItem="Wdd-Ji-LDJ" firstAttribute="width" secondItem="87c-pW-mFb" secondAttribute="width" id="PnD-aB-RfF"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1wz-cf-DZy">
-                                <rect key="frame" x="54" y="396" width="212" height="48"/>
+                                <rect key="frame" x="50" y="445.5" width="275" height="48"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSp-Uu-5yT">
-                                        <rect key="frame" x="0.0" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="０">
                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -202,15 +222,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbD-Sm-M79">
-                                        <rect key="frame" x="61" y="0.0" width="30" height="48"/>
+                                        <rect key="frame" x="76.5" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="327-p0-hZr">
-                                        <rect key="frame" x="121" y="0.0" width="30" height="48"/>
+                                        <rect key="frame" x="152.5" y="0.0" width="46.5" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                     </button>
                                     <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EJ-BB-wVJ">
-                                        <rect key="frame" x="181" y="0.0" width="31" height="48"/>
+                                        <rect key="frame" x="229" y="0.0" width="46" height="48"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
                                         <state key="normal" title="＝">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
@@ -220,9 +240,14 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="0EJ-BB-wVJ" firstAttribute="width" secondItem="BSp-Uu-5yT" secondAttribute="width" id="3Ry-jV-lhN"/>
+                                    <constraint firstItem="327-p0-hZr" firstAttribute="width" secondItem="BSp-Uu-5yT" secondAttribute="width" id="ayS-Zo-CAm"/>
+                                    <constraint firstItem="mbD-Sm-M79" firstAttribute="width" secondItem="BSp-Uu-5yT" secondAttribute="width" id="qln-Os-AXN"/>
+                                </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="９９" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJC-4K-bzq">
-                                <rect key="frame" x="208" y="70.5" width="57" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJC-4K-bzq">
+                                <rect key="frame" x="187.5" y="153.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -232,17 +257,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="59H-hc-SBC" firstAttribute="top" secondItem="uwN-vH-fuf" secondAttribute="bottom" constant="20" id="0k9-PX-ZFS"/>
-                            <constraint firstItem="GJC-4K-bzq" firstAttribute="trailing" secondItem="uwN-vH-fuf" secondAttribute="trailing" id="2gq-od-vxu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uwN-vH-fuf" secondAttribute="trailing" constant="50" id="30q-JW-MXn"/>
                             <constraint firstItem="1wz-cf-DZy" firstAttribute="top" secondItem="QLI-2L-YBG" secondAttribute="bottom" constant="20" id="4Pb-TH-L1v"/>
                             <constraint firstItem="uwN-vH-fuf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4hd-XA-n1q"/>
                             <constraint firstItem="59H-hc-SBC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C9f-z4-KXJ"/>
+                            <constraint firstItem="uwN-vH-fuf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Ec8-1p-OnX"/>
                             <constraint firstItem="QLI-2L-YBG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EcX-Po-wTt"/>
                             <constraint firstItem="CMi-Sd-QWg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G8d-xY-5P8"/>
                             <constraint firstItem="CMi-Sd-QWg" firstAttribute="top" secondItem="59H-hc-SBC" secondAttribute="bottom" constant="20" id="Hmf-7U-H3G"/>
+                            <constraint firstItem="CMi-Sd-QWg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="It0-xt-Ael"/>
                             <constraint firstItem="QLI-2L-YBG" firstAttribute="top" secondItem="CMi-Sd-QWg" secondAttribute="bottom" constant="20" id="NJQ-ou-U1W"/>
+                            <constraint firstItem="QLI-2L-YBG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="V5o-DR-jtb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="59H-hc-SBC" secondAttribute="trailing" constant="50" id="Vb9-1Y-Pb5"/>
                             <constraint firstItem="uwN-vH-fuf" firstAttribute="top" secondItem="GJC-4K-bzq" secondAttribute="bottom" constant="20" id="g4z-cX-Qq6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1wz-cf-DZy" secondAttribute="trailing" constant="50" id="iiG-P2-9u4"/>
                             <constraint firstItem="1wz-cf-DZy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j66-Cx-a9E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLI-2L-YBG" secondAttribute="trailing" constant="50" id="m2F-an-Cjj"/>
+                            <constraint firstItem="59H-hc-SBC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="mQe-uc-6Vm"/>
                             <constraint firstItem="CMi-Sd-QWg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mYt-zb-rE2"/>
+                            <constraint firstItem="GJC-4K-bzq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oF8-uO-xmc"/>
+                            <constraint firstItem="1wz-cf-DZy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="rbi-9i-iwm"/>
                             <constraint firstItem="CMi-Sd-QWg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sHz-kO-9mO"/>
                         </constraints>
                     </view>
@@ -252,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.75" y="75"/>
+            <point key="canvasLocation" x="132" y="56"/>
         </scene>
     </scenes>
     <resources>

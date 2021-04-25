@@ -24,13 +24,21 @@ class ViewController: UIViewController {
                    }
                    else{  //数字ボタンが押されると初めは何も入力されていないのでここからスタート↓
                        label.text = label.text! + String(sender.tag-1)  // String(sender.tag-1) 数字が代入
-                       numberOnScreen = Double(label.text!)!  // 数字が表示
+                    
+                    guard let unwrapped = label.text else { return }
+                    print (unwrapped)//[!]で強制unwrapではなくてguard-letでunwrapする
+                    
+                    //強制アンラップしてエラーになった例 → numberOnScreen = Double(label.text!)!
+                    
                    }
     }
     
     @IBAction func button(_ sender: UIButton) {//記号のボタン
         
-        if label.text != "" && sender.tag != 11 && sender.tag != 16{   //数字が表示されていた場合の処理
+        if label.text != "" && sender.tag != 11 && sender.tag != 16{//数字が表示されていた場合の処理
+            
+                    print(label.text)
+            
                     previousNumber = Double(label.text!)!
             
                     //↓演算子がどれで入力されたか
